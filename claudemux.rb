@@ -5,21 +5,21 @@
 class Claudemux < Formula
   desc "A lazygit-style TUI for managing Claude Code sessions"
   homepage "https://github.com/Merlijnmacgillavry/claudemux"
-  version "0.2.3"
+  version "2.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v0.2.3/claudemux_darwin_amd64.tar.gz"
-      sha256 "04995754bc67c01fc5be60a17b136ac78e2a52ca9d374c2d9828796a2aefcb29"
+      url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v2.0.4/claudemux_darwin_amd64.tar.gz"
+      sha256 "f981dd5b3e9843a24b6de02ce22965672ff88ba179f6c6d279faf55a5f8c6c29"
 
       define_method(:install) do
         bin.install "claudemux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v0.2.3/claudemux_darwin_arm64.tar.gz"
-      sha256 "dc22bcf8bb6f33c57f6887dedb498e4216d5adcbd76be42e5dccbd7be7bb136b"
+      url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v2.0.4/claudemux_darwin_arm64.tar.gz"
+      sha256 "cef9186270b2c1efb630b9d2e26e7252f7a764424c8efc8338426f2eef299d6c"
 
       define_method(:install) do
         bin.install "claudemux"
@@ -29,15 +29,15 @@ class Claudemux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v0.2.3/claudemux_linux_amd64.tar.gz"
-      sha256 "c82055eec4a5f7c2a1076df0eb8d0f047382a75efbd2b5a1c71f24fe840e46f0"
+      url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v2.0.4/claudemux_linux_amd64.tar.gz"
+      sha256 "c66a39832c5ea9d22caa8813e436ed0bf5f3242266cc084ddd3d0fa73a6d1717"
       define_method(:install) do
         bin.install "claudemux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v0.2.3/claudemux_linux_arm64.tar.gz"
-      sha256 "b74f8a0892a05cbdd2de106ed09a9cca3b05904ebf53298049602185bf7350f0"
+      url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v2.0.4/claudemux_linux_arm64.tar.gz"
+      sha256 "298419618d98da2b4b4b2dce431f95c3b4a294c509ab3055f1130cb8b1cfcb5b"
       define_method(:install) do
         bin.install "claudemux"
       end
