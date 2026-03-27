@@ -11,7 +11,7 @@ class Claudemux < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v2.0.5/claudemux_darwin_amd64.tar.gz"
-      sha256 "e711a626ce43216b691b4aed9397324c57e65fd53cdaf2081ca723dd2c187132"
+      sha256 "57eb5e59f6f271abb8dd39572e129e4d79d609582002b376471646631ecf0da4"
 
       define_method(:install) do
         bin.install "claudemux"
@@ -19,7 +19,7 @@ class Claudemux < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v2.0.5/claudemux_darwin_arm64.tar.gz"
-      sha256 "a8345dc4f0cc1e47224f1ea572e6ae771eafebe836e229500e32d54e05e4e3f9"
+      sha256 "bb58fad3551bfa4a2103f4ff617a912a9290c8a5a47334f0f526357ed32ad05a"
 
       define_method(:install) do
         bin.install "claudemux"
@@ -30,14 +30,14 @@ class Claudemux < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v2.0.5/claudemux_linux_amd64.tar.gz"
-      sha256 "c85471f50a2460a23dbc1b1dca4a7267c957759cb02d4beee8fcb8f2f1ab4324"
+      sha256 "1f0be72f6eebfcd297460e8728f0b50a503631a759bac2b6f75b3312293d057d"
       define_method(:install) do
         bin.install "claudemux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Merlijnmacgillavry/claudemux/releases/download/v2.0.5/claudemux_linux_arm64.tar.gz"
-      sha256 "8a266fa9dc21d4ad78ca2fce61a780e4dbf34ba0e274995f2e680c0a1014800f"
+      sha256 "03a8714fa88053f1cf44f8ab9252448f4d1d59ed6f510d410c61cf83d27069a3"
       define_method(:install) do
         bin.install "claudemux"
       end
